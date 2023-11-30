@@ -36,35 +36,20 @@ export function NavBar({
         scroll ? (scrolled ? "border-b" : "bg-background/0") : "border-b"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between py-4">
+      <div className="container flex h-16 items-center justify-between py-12">
         <MainNav items={items}>{children}</MainNav>
 
         <div className="flex items-center space-x-3">
           {rightElements}
 
-          {/* {!user ? (
-              <Link
-                href="/login"
-                className={cn(
-                  buttonVariants({ variant: "outline", size: "sm" })
-                )}
-              >
-                Login Page
-              </Link>
-            ) : null} */}
-
-          {user ? (
-            <UserAccountNav user={user} />
-          ) : (
-            <Button
-              className="px-3"
-              variant="default"
-              size="sm"
-              onClick={signInModal.onOpen}
-            >
-              Sign In
-            </Button>
-          )}
+          <Button
+            className="rounded-full bg-[#a68b6d] px-3"
+            variant="default"
+            size="lg"
+            onClick={signInModal.onOpen}
+          >
+            Min Side
+          </Button>
         </div>
       </div>
     </header>

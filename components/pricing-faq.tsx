@@ -8,51 +8,55 @@ import {
 } from "@/components/ui/accordion";
 
 const pricingFaqData = [
+  // ... eksisterende items
   {
     id: "item-1",
-    question:
-      "How does Propwrite's AI improve the real estate listing process?",
+    question: "Hva gjør jeg hvis jeg har mistet husnøkkelen?",
     answer:
-      "Propwrite utilizes AI to analyze property details and generate compelling descriptions that highlight unique features, optimize for search engines, and attract potential buyers more effectively than standard listings.",
+      "Dersom det er innenfor åpningstidene våre kan du komme innom å hente ny. Du må selv betale prisen det koster å produsere ny nøkkel. Utenom ordinær åpningstid kan du ringe vår vakttelefon. (NB! utrykning vil utløse gebyr som dekkes av leietaker)",
   },
   {
     id: "item-2",
-    question: "Can I integrate Propwrite with my existing real estate tools?",
-    answer:
-      "Not yet... But soon we can say this - Absolutely! Propwrite is built with integration in mind. Our comprehensive API allows you to seamlessly connect with a range of real estate tools and platforms, ensuring a smooth addition to your current workflow.",
+    question: "Er strøm inkludert i husleien?",
+    answer: "Nei, strøm er ikke inkludert i husleien.",
   },
   {
     id: "item-3",
-    question: "What kind of support can I expect with Propwrite?",
-    answer:
-      "We offer dedicated support for all our users. Whether you're on a free or paid plan, our team is ready to assist you with any questions or issues you may encounter. Premium support options are available for our Pro plan subscribers.",
+    question: "Er internett inkludert i husleien?",
+    answer: "Ja, internett er inkludert i husleien.",
   },
   {
     id: "item-4",
-    question: "Is my data secure with Propwrite?",
-    answer:
-      "Data security is our top priority. We employ SSL encryption and adhere to industry best practices to ensure that all your data, from property listings to client information, is securely stored and protected.",
+    question: "Hvilken krav har dere til depositum?",
+    answer: "I våre leieforhold krever vi 3 måneders husleie i depositum.",
   },
   {
     id: "item-5",
-    question: "How does the free plan differ from the paid plans?",
+    question: "Er det mulig å leie parkering?",
     answer:
-      "The free plan offers basic features that allow you to experience the advantages of AI-driven listings. Our paid plans provide access to more advanced features, including detailed analytics, priority support, and increased listing volumes.",
+      "Vi har parkeringsplasser tilknyttet alle våre bygg. Ta kontakt med oss for tilgjengelighet og leie av disse.",
   },
   {
     id: "item-6",
-    question: "What additional features does the Pro plan include?",
+    question: "Er oppvarming inkludert i husleie?",
     answer:
-      "The Pro plan includes everything in the Basic plan plus advanced analytics, priority support, higher volume of listings, custom API integrations, and access to new features before they're publicly released.",
+      "Nei, oppvarming er ikke inkludert i husleien. Det blir fakturert som et fast beløp pr. mnd med avregning en gang i året.",
   },
+  {
+    id: "item-7",
+    question: "Er det lov med husdyr?",
+    answer:
+      "Ja, husdyr er tillatt. For å ha husdyr må det signeres en egen leiekontrakt med en tilhørende erklæring for dyreholdet.",
+  },
+  // ... eventuelle ytterligere items
 ];
 
 export function PricingFaq() {
   return (
     <section className="container max-w-4xl py-2">
       <div className="mb-14 space-y-6 text-center">
-        <h1 className="text-center font-heading text-3xl md:text-5xl">
-          <Balancer>Frequently Asked Questions</Balancer>
+        <h1 className="text-center font-heading text-3xl text-green-700 md:text-5xl">
+          <Balancer>Ofte stilte spørsmål</Balancer>
         </h1>
         <p className="text-md text-muted-foreground">
           <Balancer>

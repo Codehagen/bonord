@@ -2,18 +2,29 @@ import { MarketingConfig } from "types";
 
 export const marketingConfig: MarketingConfig = {
   mainNav: [
-    // {
-    //   title: "Pricing",
-    //   href: "/pricing",
-    // },
-    // {
-    //   title: "Blog",
-    //   href: "/blog",
-    //   // disabled: true,
-    // },
     {
       title: "Leie bolig",
       href: "/leie",
+    },
+    {
+      title: "For beboere",
+      href: "/",
+    },
+    {
+      title: "Leie bolig",
+      href: "/",
+    },
+    {
+      title: "Om Bonord",
+      href: "/",
+    },
+    {
+      title: "Ofte stilte spørsmål",
+      href: "/faq",
+    },
+    {
+      title: "Kontakt",
+      href: "/",
     },
   ],
 };

@@ -18,7 +18,7 @@ export default async function IndexPage() {
       <section className="space-y-6 pb-12 pt-16 lg:py-28">
         <div className="container flex max-w-[64rem] flex-col items-center gap-5 text-center">
           <h1
-            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
+            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight text-green-700 opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             <Balancer>
@@ -40,15 +40,18 @@ export default async function IndexPage() {
           <div
             className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
             style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
-          ></div>
-          <Button>Leie bolig</Button>
+          >
+            <Button className="rounded-full bg-[#a68b6d] " size="lg">
+              Leie bolig
+            </Button>
+          </div>
         </div>
       </section>
 
       <section className="space-y-6 pb-12 pt-16 lg:py-28">
         <div className="container flex max-w-[64rem] flex-col items-center gap-5 text-center">
           <h1
-            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
+            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight  text-teal-600 opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             <Balancer>Eget fordelsprogram for våre kunder</Balancer>
@@ -67,8 +70,10 @@ export default async function IndexPage() {
           <div
             className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
             style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
-          ></div>
-          <Button>Leie bolig</Button>
+          >
+            <Button className="rounded-full bg-[#a68b6d]">Leie bolig</Button>
+          </div>
+          {/* <Button className="rounded-full bg-[#a68b6d]">Leie bolig</Button> */}
         </div>
       </section>
 
