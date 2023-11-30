@@ -15,7 +15,7 @@ export const metadata = {
     "View and edit your property details, add images, and customize listings to attract potential buyers. Your one-stop destination for managing individual real estate listings on Propwrite.",
 };
 
-export const maxDuration = 50;
+export const maxDuration = 10;
 
 export default async function PropertyPage({
   params,

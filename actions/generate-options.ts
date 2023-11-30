@@ -4,7 +4,7 @@ import axios from "axios";
 
 import { prisma } from "@/lib/db";
 
-export const maxDuration = 50;
+export const maxDuration = 10;
 
 export async function generateOptions(
   imageId,
