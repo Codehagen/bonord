@@ -72,7 +72,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontHeading.variable,
         )}
       >
-        <Providers attribute="class" defaultTheme="system" enableSystem>
+        <Providers attribute="class" defaultTheme="light" enableSystem>
           <EdgeStoreProvider>{children}</EdgeStoreProvider>
           <Analytics />
           <Toaster />
