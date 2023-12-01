@@ -51,7 +51,7 @@ export default async function IndexPage() {
       <section className="space-y-6 pb-12 pt-16 lg:py-28">
         <div className="container flex max-w-[64rem] flex-col items-center gap-5 text-center">
           <h1
-            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight  text-teal-600 opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
+            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight  text-green-700 opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             <Balancer>Eget fordelsprogram for våre kunder</Balancer>

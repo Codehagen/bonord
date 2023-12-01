@@ -8,7 +8,7 @@ export default function PropertyPage() {
       {/* Top image */}
       <div className="relative h-60 w-full">
         <Image
-          src="/path-to-your-image.jpg" // Replace with your image path
+          src="/images/miljofyr.png" // Replace with your image path
           layout="fill"
           objectFit="cover"
           alt="Property View"
