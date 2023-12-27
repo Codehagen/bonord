@@ -46,7 +46,7 @@ export function NavBar({
             className="rounded-full bg-[#a68b6d] px-3"
             variant="default"
             size="lg"
-            onClick={signInModal.onOpen}
+            // onClick={signInModal.onOpen}
           >
             Min Side
           </Button>

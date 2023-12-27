@@ -12,13 +12,13 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             <ul className="space-y-2 text-muted-foreground">
               <li>Kundeservice: 48 100 748</li>
               <li>Vakttelefon: 975 30 006</li>
-              <li>Email: kontakt@bonord.no</li>
+              <li>Email: kontakt@Bonor.no</li>
             </ul>
           </div>
 
           <div className="mb-6 w-full lg:mb-0 lg:w-auto">
             <p className="font-medium text-gray-900">POSTADRESSE:</p>
-            <p className="text-muted-foreground">Bonord AS</p>
+            <p className="text-muted-foreground">Bonor AS</p>
             <p className="text-muted-foreground">Sjøgata 18</p>
             <p className="text-muted-foreground">8006 Bodø</p>
           </div>

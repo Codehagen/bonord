@@ -6,17 +6,13 @@ export const marketingConfig: MarketingConfig = {
       title: "Leie bolig",
       href: "/leie",
     },
+    // {
+    //   title: "For beboere",
+    //   href: "/",
+    // },
     {
-      title: "For beboere",
-      href: "/",
-    },
-    {
-      title: "Leie bolig",
-      href: "/",
-    },
-    {
-      title: "Om Bonord",
-      href: "/",
+      title: "Om Bonor",
+      href: "/om-bonor",
     },
     {
       title: "Ofte stilte spørsmål",
@@ -24,7 +20,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: "Kontakt",
-      href: "/",
+      href: "/kontakt",
     },
   ],
 };

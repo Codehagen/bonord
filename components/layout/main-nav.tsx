@@ -70,7 +70,7 @@ export function MainNav({ items, children }: MainNavProps) {
       >
         {showMobileMenu ? <Icons.close /> : ""}
         <span className="font-urban text-xl font-bold  text-green-700">
-          Bonord
+          Bonor
         </span>
       </button>
       {showMobileMenu && items && (

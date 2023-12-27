@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
@@ -33,47 +34,54 @@ export default async function IndexPage() {
           >
             <Balancer>
               Kvalitet og standard behøver ikke være dårligere for den som leier
-              bolig enn for den som eier. Opplev forskjellen med boNord.
+              bolig enn for den som eier. Opplev forskjellen med Bonor.
             </Balancer>
           </p>
 
-          <div
-            className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
-            style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
-          >
-            <Button className="rounded-full bg-[#a68b6d] " size="lg">
-              Leie bolig
-            </Button>
-          </div>
+          <Link href="/kontakt" passHref>
+            <div
+              className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
+              style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+            >
+              <Button className="rounded-full bg-[#a68b6d] " size="lg">
+                Leie bolig
+              </Button>
+            </div>
+          </Link>
         </div>
       </section>
 
+      {/* Image section */}
+      <div className="my-4 flex justify-center">
+        <Image
+          src="/images/iparken-2.png" // Replace with your image path
+          width={1418} // Replace with the actual image width
+          height={768} // Replace with the actual image height
+          alt="Descriptive Text"
+          className="rounded-lg" // This will apply rounded corners
+        />
+      </div>
+
       <section className="space-y-6 pb-12 pt-16 lg:py-28">
         <div className="container flex max-w-[64rem] flex-col items-center gap-5 text-center">
-          <h1
-            className="animate-fade-up font-urban text-4xl font-extrabold tracking-tight  text-green-700 opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
-            style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-          >
-            <Balancer>Eget fordelsprogram for våre kunder</Balancer>
-          </h1>
+          <Link href="/faq">
+            <h1
+              className="animate-fade-up cursor-pointer font-urban text-4xl font-extrabold tracking-tight text-green-700 opacity-0 transition-colors duration-300 hover:text-[#D69647] sm:text-5xl md:text-6xl lg:text-7xl"
+              style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+            >
+              <Balancer>Eget fordelsprogram for våre kunder</Balancer>
+            </h1>
+          </Link>
 
           <p
             className="max-w-[42rem] animate-fade-up leading-normal text-muted-foreground opacity-0 sm:text-xl sm:leading-8"
             style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
           >
             <Balancer>
-              Med BoNord Fordel får du som kunde hos oss rabatter og fordeler
-              hos flere aktøre
+              Med Bonor Fordel får du som kunde hos oss rabatter og fordeler hos
+              flere aktøre
             </Balancer>
           </p>
-
-          <div
-            className="flex animate-fade-up justify-center space-x-2 opacity-0 md:space-x-4"
-            style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
-          >
-            <Button className="rounded-full bg-[#a68b6d]">Leie bolig</Button>
-          </div>
-          {/* <Button className="rounded-full bg-[#a68b6d]">Leie bolig</Button> */}
         </div>
       </section>
 
@@ -88,18 +96,20 @@ export default async function IndexPage() {
                 <Balancer>
                   Det er mange fordeler med å leie bolig. Et leieforhold gir
                   fleksibilitet og du som leietaker har mindre ansvar og
-                  uforutsette utgifter. Vi i Nyheim Bolig spesialiserer oss på
+                  uforutsette utgifter. Vi i Bonor Bolig spesialiserer oss på
                   gode leieforhold. Her er fem grunner til å velge oss.
                 </Balancer>
               </p>
             </div>
             <Suspense fallback="...">
               <div className="flex justify-center">
-                <img
-                  alt="Happy couple"
-                  className="h-auto w-full rounded-lg object-cover"
-                  src="https://media.istockphoto.com/id/1368004438/photo/shot-of-a-couple-enjoying-a-day-at-the-beach.jpg?s=612x612&w=0&k=20&c=hMi6N-u6baFHC-P8C-8X_5iFshdPPicx7BCrBGM8ARc="
-                  style={{ aspectRatio: "400/250" }}
+                <Image
+                  src="/images/happy2.png"
+                  width={1365} // Replace with the actual image width
+                  height={768} // Replace with the actual image height
+                  alt="Happy couple" // Replace with your alt text
+                  className="rounded-lg object-cover"
+                  layout="responsive"
                 />
               </div>
             </Suspense>
